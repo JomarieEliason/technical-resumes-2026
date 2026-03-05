@@ -14,8 +14,8 @@ Welcome to my professional repository. I specialize in the intersection of **Clo
 ---
 
 ## 📬 Connect With Me
-- **LinkedIn:** [www.linkedin.com/in/j-nacario]
-- **Portfolio:** [[Insert Your Link](https://github.com/JomarieEliason)
+- **LinkedIn:** [www.linkedin.com/in/j-nacario](www.linkedin.com/in/j-nacario]
+- **Portfolio:** [Github](https://github.com/JomarieEliason)
 - **Email:** [jomarienacario15@gmail.com]
 
 *Last Updated: March 2026*
