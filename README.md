@@ -18,9 +18,8 @@ Welcome to my professional repository. I specialize in the intersection of **Clo
 - **Portfolio:** [Github](https://github.com/JomarieEliason)
 - **Email:** jomarienacario15@gmail.com
 
-*Last Updated: March 2026*
 """,
-    "Modern_Innovation_Resume.md": """# JOMARIE ELIASON
+    "Modern_Innovation_Resume.md": """# JOMARIE NACARIO
 **Strategic Technical Sales & IT Support Professional**
 
 ### PROFESSIONAL SUMMARY
@@ -88,48 +87,3 @@ Senior IT Support Specialist and U.S. Army Veteran with 8+ years experience in h
 - Google IT Support Professional Certificate (2025)
 - Google AI Professional Certificate (2026)
 """
-}
-
-def upload_to_github(filename, content):
-    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{filename}"
-    headers = {
-        "Authorization": f"token {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github.v3+json"
-    }
-    
-    # Check if file exists to get SHA
-    response = requests.get(url, headers=headers)
-    sha = None
-    if response.status_code == 200:
-        sha = response.json().get('sha')
-    elif response.status_code == 401:
-        print(f"Error: 401 Unauthorized. Your token for {GITHUB_REPO} is invalid.")
-        return
-
-    data = {
-        "message": f"Full Portfolio Content Sync: {filename}",
-        "content": base64.b64encode(content.encode('utf-8')).decode('utf-8')
-    }
-    
-    if sha:
-        data["sha"] = sha
-        
-    res = requests.put(url, headers=headers, data=json.dumps(data))
-    if res.status_code in [200, 201]:
-        print(f"Successfully uploaded: {filename}")
-    else:
-        print(f"Error uploading {filename}: {res.text}")
-
-def main():
-    if GITHUB_TOKEN == "YOUR_GITHUB_TOKEN_HERE" or GITHUB_TOKEN == "":
-        print("Please update the GITHUB_TOKEN in the script.")
-        return
-    
-    print(f"Connecting to {GITHUB_REPO}...")
-    # Add index.html to the upload list
-    # Note: Ensure index.html is in your local directory or hardcode it here
-    for name, text in resumes.items():
-        upload_to_github(name, text)
-
-if __name__ == "__main__":
-    main()
