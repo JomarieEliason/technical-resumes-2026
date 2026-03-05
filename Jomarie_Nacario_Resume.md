@@ -33,6 +33,7 @@ Operational Scaling: Successfully founded and scaled an e-commerce brand (Bjorn 
 
 Strategic Communication: Translating complex technical architectures into clear business value for C-suite stakeholders.
 
+
 CERTIFICATIONS
 
 Google AI Professional Certificate | Google | 2026
@@ -48,6 +49,7 @@ AWS Certified Solutions Architect – Associate | Amazon Web Services | 2022
 Microsoft Certified: Azure Fundamentals (AZ-900) | Microsoft | 2021
 
 MTA: Software Development Fundamentals | Microsoft | 2021
+
 
 PROFESSIONAL EXPERIENCE
 
@@ -78,6 +80,7 @@ U.S. ARMY | Marine Engineering Specialist | 2012 – 2017
 Performed critical maintenance and precision repairs on marine engineering systems in high-stakes environments.
 
 Developed a disciplined, methodical approach to systems troubleshooting that serves as the foundation for current technical rigor.
+
 
 EDUCATION
 
