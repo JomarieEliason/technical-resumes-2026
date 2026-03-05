@@ -1,7 +1,7 @@
 JOMARIE NACARIO
 
 Los Angeles, CA, 90020 | 718-288-9035 | jomarienacario15@gmail.com
-[LinkedIn Profile URL] | [[Portfolio](https://github.com/JomarieEliason)
+[LinkedIn Profile URL] | [Portfolio](https://github.com/JomarieEliason)
 
 PROFESSIONAL SUMMARY
 
