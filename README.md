@@ -1,96 +1,143 @@
-JOMARIE NACARIO
+import requests
+import base64
+import json
 
-Los Angeles, CA, 90020 | 718-288-9035 | jomarienacario15@gmail.com |
-[LinkedIn](https://www.linkedin.com/in/j-nacario) | [Github](https://github.com/JomarieEliason)
+# =================================================================
+# RESUME & PORTFOLIO DATA (FULL CONTENT)
+# =================================================================
+resumes = {
+    "README.md": """# 🚀 Tech-Forward Solutions Architect & AI Strategist
+### U.S. Army Veteran | AWS Solutions Architect | AI Automation Expert
 
-PROFESSIONAL SUMMARY
+Welcome to my professional repository. I specialize in the intersection of **Cloud Infrastructure**, **Generative AI Automation**, and **Strategic Sales**. My background combines the methodical discipline of military marine engineering with high-performance sales experience at Apple and entrepreneurial leadership.
 
-Strategic Technical Sales Leader, Cloud Architect, and U.S. Army Veteran with a unique "triple-threat" profile combining military discipline, high-performance sales experience, and advanced technical expertise. Recently credentialed with the Google AI Professional Certificate (2026) and AWS Cloud Support Associate (2025). Proven track record of driving B2B revenue growth at Aurakore IT Solutions and delivering expert-level technical consultations at Apple. Expert in leveraging AI-driven automation and cloud infrastructure to optimize business operations and client success.
+---
 
-CORE COMPETENCIES
+## 📄 Targeted Resumes
+- [🚀 Modern Innovation](./Modern_Innovation_Resume.md) - AI Strategy & Technical Sales
+- [🤖 AI Specialist](./AI_Automation_Specialist.md) - Generative AI & Automation
+- [☁️ Cloud Architect](./Cloud_Solutions_Architect.md) - AWS/Azure Infrastructure
+- [🛠️ Enterprise IT](./Enterprise_IT_Support.md) - Senior Systems Support
 
-AI & Automation (2026 Specialization):
+---
 
-AI Fluency: Expert in Prompt Engineering (RIGS framework) for workflow automation and deep research.
+## 📬 Connect With Me
+- **LinkedIn:** [www.linkedin.com/in/j-nacario]
+- **Portfolio:** [[Insert Your Link](https://github.com/JomarieEliason)]
+- **Email:** [jomarienacario15@gmail.com]
 
-Vibe Coding: Building custom AI-powered applications and internal tools to solve operational bottlenecks without traditional code.
+*Last Updated: March 2026*
+""",
+    "Modern_Innovation_Resume.md": """# JOMARIE ELIASON
+**Strategic Technical Sales & IT Support Professional**
 
-Data Intelligence: Cleaning and visualizing unstructured data using Gemini in Google Sheets and BigQuery.
+### PROFESSIONAL SUMMARY
+Dynamic Tech-Forward Professional and U.S. Army Veteran specializing in AI Automation, Cloud Architecture, and Revenue Generation. Expert in the RIGS framework for prompt engineering and "vibe coding" custom AI-powered applications. 
 
-Cloud & Technical Support:
+### CORE COMPETENCIES
+- **AI Fluency:** Prompt Engineering (RIGS), Vibe Coding, Data Intelligence.
+- **Strategic Sales:** B2B Account Management, Consultative Selling at Apple and Aurakore.
+- **Leadership:** U.S. Army Veteran with elite troubleshooting discipline.
 
-Cloud Platforms: AWS (Certified Solutions Architect Associate, Cloud Support Associate), Azure (Fundamentals).
+### CERTIFICATIONS
+- Google AI Professional Certificate (2026)
+- AWS Cloud Support Associate (2025)
+""",
+    "AI_Automation_Specialist.md": """# JOMARIE ELIASON
+**AI & Automation Specialist**
 
-IT Infrastructure: Enterprise-level troubleshooting, Network Security, Virtualization (EC2/S3), Linux/Windows.
+### EXPERTISE
+AI-Native Technical Lead specialized in deploying Generative AI frameworks to solve operational challenges. Expert in building custom AI-powered applications without code ("Vibe Coding") to solve operational bottlenecks.
 
-Development: Front-End Web Development (HTML/CSS/JS) and Software Development Fundamentals (MTA).
+### AI COMPETENCIES
+- **Prompt Engineering:** Expert in RIGS framework.
+- **Data Intelligence:** Visualizing unstructured data via Gemini and BigQuery.
+- **Automation:** Deploying AI agents for sales and support workflows.
 
-Sales & Entrepreneurship:
+### CERTIFICATIONS
+- Google AI Professional Certificate (2026)
+- MTA: Software Development Fundamentals
+""",
+    "Cloud_Solutions_Architect.md": """# JOMARIE ELIASON
+**Cloud Solutions & Support Architect**
 
-Revenue Generation: Full-funnel advertising, B2B Account Management, and consultative technical selling.
+### PROFESSIONAL SUMMARY
+**AWS Certified Solutions Architect & U.S. Army Veteran** with a deep focus on cloud migration, infrastructure reliability, and multi-cloud environments (AWS/Azure). Recently credentialed as an **AWS Cloud Support Associate (2025)**, combining advanced troubleshooting skills with a strategic understanding of scalable architecture.
 
-Operational Scaling: Successfully founded and scaled an e-commerce brand (Bjorn Jewels) via data-driven marketing.
+### CLOUD & TECHNICAL COMPETENCIES
+* **Architecture:** VPC configuration, High Availability (Multi-AZ), IAM Security, Route53.
+* **Storage & Compute:** EC2, S3, RDS, Lambda, and CloudWatch monitoring.
+* **Support:** Enterprise hardware/software resolution, virtualization, and Linux administration.
+* **Automation:** Integrating AI-driven monitoring and automated recovery scripts.
 
-Strategic Communication: Translating complex technical architectures into clear business value for C-suite stakeholders.
+### EXPERIENCE HIGHLIGHTS
+**AURAKORE IT SOLUTIONS** | Technical Account Executive
+* Prototyped and proposed optimized AWS/Azure architectures.
+**U.S. ARMY** | Marine Engineering Specialist
+* Diagnosed and repaired critical engineering systems under high-stakes conditions.
 
-CERTIFICATIONS
+### CERTIFICATIONS
+* **AWS Cloud Support Associate** | 2025
+* **AWS Certified Solutions Architect – Associate** | 2022
+* **Microsoft Certified: Azure Fundamentals (AZ-900)** | 2021
+""",
+    "Enterprise_IT_Support.md": """# JOMARIE ELIASON
+**Senior IT Support Specialist**
 
-Google AI Professional Certificate | Google | 2026
+### PROFESSIONAL SUMMARY
+Senior IT Support Specialist and U.S. Army Veteran with 8+ years experience in hardware/software resolution and network security. Expert in enterprise systems administration and integrating AI automation into traditional helpdesk workflows.
 
-AWS Cloud Support Associate | Amazon Web Services | 2025
+### TECHNICAL SKILLS
+- **Systems:** Active Directory, Office 365, Windows/Linux Server.
+- **Troubleshooting:** High-pressure hardware resolution (Apple/Military).
+- **Networking:** Security foundations and virtualization.
 
-Google IT Support Professional Certificate | Google | 2025
+### CERTIFICATIONS
+- Google IT Support Professional Certificate (2025)
+- Google AI Professional Certificate (2026)
+"""
+}
 
-Front-End Web Development Certificate | W3Schools | 2024
+def upload_to_github(filename, content):
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{filename}"
+    headers = {
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    
+    # Check if file exists to get SHA
+    response = requests.get(url, headers=headers)
+    sha = None
+    if response.status_code == 200:
+        sha = response.json().get('sha')
+    elif response.status_code == 401:
+        print(f"Error: 401 Unauthorized. Your token for {GITHUB_REPO} is invalid.")
+        return
 
-AWS Certified Solutions Architect – Associate | Amazon Web Services | 2022
+    data = {
+        "message": f"Full Portfolio Content Sync: {filename}",
+        "content": base64.b64encode(content.encode('utf-8')).decode('utf-8')
+    }
+    
+    if sha:
+        data["sha"] = sha
+        
+    res = requests.put(url, headers=headers, data=json.dumps(data))
+    if res.status_code in [200, 201]:
+        print(f"Successfully uploaded: {filename}")
+    else:
+        print(f"Error uploading {filename}: {res.text}")
 
-Microsoft Certified: Azure Fundamentals (AZ-900) | Microsoft | 2021
+def main():
+    if GITHUB_TOKEN == "YOUR_GITHUB_TOKEN_HERE" or GITHUB_TOKEN == "":
+        print("Please update the GITHUB_TOKEN in the script.")
+        return
+    
+    print(f"Connecting to {GITHUB_REPO}...")
+    # Add index.html to the upload list
+    # Note: Ensure index.html is in your local directory or hardcode it here
+    for name, text in resumes.items():
+        upload_to_github(name, text)
 
-MTA: Software Development Fundamentals | Microsoft | 2021
-
-PROFESSIONAL EXPERIENCE
-
-AURAKORE IT SOLUTIONS | Account Executive | 2023 – Present
-
-Orchestrate end-to-end B2B sales cycles for IT solutions, identifying technical pain points and proposing scalable cloud architectures.
-
-Manage high-value accounts, ensuring alignment between client business goals and technical service delivery.
-
-Innovation Milestone: Integrated AI-driven lead research and automated reporting tools, increasing outreach efficiency by 40%.
-
-APPLE | Sales Specialist | 2019 – 2023
-
-Delivered expert-level product demonstrations and technical consultations for a diverse global customer base.
-
-Consistently exceeded aggressive sales targets while maintaining top-tier Net Promoter Scores (NPS).
-
-Collaborated with Technical Support teams (Genius Bar) to ensure seamless handoffs for complex hardware/software repairs.
-
-BJORN JEWELS | Founder / CEO | 2017 – 2022
-
-Architected and scaled a full-funnel e-commerce enterprise, overseeing digital marketing, brand strategy, and global supply chain.
-
-Optimized operational overhead by implementing automated data tracking and AI-enhanced customer service workflows.
-
-U.S. ARMY | Marine Engineering Specialist | 2012 – 2017
-
-Performed critical maintenance and precision repairs on marine engineering systems in high-stakes environments.
-
-Developed a disciplined, methodical approach to systems troubleshooting that serves as the foundation for current technical rigor.
-
-EDUCATION
-
-Mount Saint Mary’s University | Bachelor of Arts (BA) in Business Administration
-
-Frankfurt University of Applied Sciences | European Studies: History, Law, and Finance
-
-Santa Monica College | Associate of Arts (AA) in Business Administration
-
-U.S. Army Engineering School | Technical Training in Marine Systems
-
-Ongoing Professional Development:
-
-Cloud Computing & Virtualization Track | 2021 – 2026
-
-Applied Artificial Intelligence & Machine Learning | 2024 – 2026
+if __name__ == "__main__":
+    main()
