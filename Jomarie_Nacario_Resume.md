@@ -10,16 +10,19 @@ Strategic Technical Sales Leader, Cloud Architect, and U.S. Army Veteran with a 
 CORE COMPETENCIES
 
 AI & Automation (2026 Specialization):
+
 AI Fluency: Expert in Prompt Engineering (RIGS framework) for workflow automation and deep research.
 Vibe Coding: Building custom AI-powered applications and internal tools to solve operational bottlenecks without traditional code.
 Data Intelligence: Cleaning and visualizing unstructured data using Gemini in Google Sheets and BigQuery.
 
 Cloud & Technical Support:
+
 Cloud Platforms: AWS (Certified Solutions Architect Associate, Cloud Support Associate), Azure (Fundamentals).
 IT Infrastructure: Enterprise-level troubleshooting, Network Security, Virtualization (EC2/S3), Linux/Windows.
 Development: Front-End Web Development (HTML/CSS/JS) and Software Development Fundamentals (MTA).
 
 Sales & Entrepreneurship:
+
 Revenue Generation: Full-funnel advertising, B2B Account Management, and consultative technical selling.
 Operational Scaling: Successfully founded and scaled an e-commerce brand (Bjorn Jewels) via data-driven marketing.
 Strategic Communication: Translating complex technical architectures into clear business value for C-suite stakeholders.
