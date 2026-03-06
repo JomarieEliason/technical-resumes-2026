@@ -31,11 +31,17 @@ Strategic Communication: Translating complex technical architectures into clear 
 CERTIFICATIONS
 
 Google AI Professional Certificate | Google | 2026
+
 AWS Cloud Support Associate | Amazon Web Services | 2025
+
 Google IT Support Professional Certificate | Google | 2025
+
 Front-End Web Development Certificate | W3Schools | 2024
+
 AWS Certified Solutions Architect – Associate | Amazon Web Services | 2022
+
 Microsoft Certified: Azure Fundamentals (AZ-900) | Microsoft | 2021
+
 MTA: Software Development Fundamentals | Microsoft | 2021
 
 
