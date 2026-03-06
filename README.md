@@ -20,10 +20,9 @@ My foundation was built in the U.S. Army as a Marine Engineering Specialist. I b
 
 📫 Connect With Me
 
-LinkedIn: [](linkedin.com/in/j-nacario)
+LinkedIn: [LinkedIn](linkedin.com/in/j-nacario)
 
-Portfolio: JomarieNacario.github.io/technical-resumes-2026
-
+Portfolio:[Github](JomarieNacario.github.io/technical-resumes-2026)
 Email: jomarienacario15@gmail.com
 
 Phone: 0960-563-6035
