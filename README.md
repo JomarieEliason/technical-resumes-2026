@@ -1,89 +1,31 @@
-# 🚀 Tech-Forward Solutions Architect & AI Strategist
-### U.S. Army Veteran | AWS Solutions Architect | AI Automation Expert
+Hi there, I'm Jomarie Nacario! 👋
 
-Welcome to my professional repository. I specialize in the intersection of **Cloud Infrastructure**, **Generative AI Automation**, and **Strategic Sales**. My background combines the methodical discipline of military marine engineering with high-performance sales experience at Apple and entrepreneurial leadership.
+🚀 U.S. Army Veteran | AWS Solutions Architect | AI Automation Strategist
 
----
+I am a technical leader who thrives at the intersection of Cloud Infrastructure, Generative AI, and Strategic Sales. My mission is to bridge the gap between complex technical systems and high-growth business outcomes.
 
-## 📄 Targeted Resumes
-- [🚀 Modern Innovation](./Modern_Innovation_Resume.md) - AI Strategy & Technical Sales
-- [🤖 AI Specialist](./AI_Automation_Specialist.md) - Generative AI & Automation
-- [☁️ Cloud Architect](./Cloud_Solutions_Architect.md) - AWS/Azure Infrastructure
-- [🛠️ Enterprise IT](./Enterprise_IT_Support.md) - Senior Systems Support
+🛠️ The 2026 Tech Suite
 
----
+🤖 AI & Automation: Expert in the RIGS framework for prompt engineering and "Vibe Coding" for rapid, no-code/low-code internal tool development.
 
-## 📬 Connect With Me
-- **LinkedIn:** [LinkedIn](www.linkedin.com/in/j-nacario)
-- **Portfolio:** [Github](https://github.com/JomarieNacario)
-- **Email:** jomarienacario15@gmail.com
+☁️ Cloud Architecture: AWS Certified Solutions Architect and Cloud Support Associate (2025) with deep experience in Azure Fundamentals.
 
-""",
-    "Modern_Innovation_Resume.md": """# JOMARIE NACARIO
-**Strategic Technical Sales & IT Support Professional**
+💼 Sales & Strategy: High-performance background at Apple and Aurakore IT, focusing on technical account management and B2B revenue scaling.
 
-### PROFESSIONAL SUMMARY
-Dynamic Tech-Forward Professional and U.S. Army Veteran specializing in AI Automation, Cloud Architecture, and Revenue Generation. Expert in the RIGS framework for prompt engineering and "vibe coding" custom AI-powered applications. 
+🛠️ IT Operations: 12+ years of troubleshooting experience, from U.S. Army marine systems to enterprise M365 environments.
 
-### CORE COMPETENCIES
-- **AI Fluency:** Prompt Engineering (RIGS), Vibe Coding, Data Intelligence.
-- **Strategic Sales:** B2B Account Management, Consultative Selling at Apple and Aurakore.
-- **Leadership:** U.S. Army Veteran with elite troubleshooting discipline.
+🎖️ The Veteran Advantage
 
-### CERTIFICATIONS
-- Google AI Professional Certificate (2026)
-- AWS Cloud Support Associate (2025)
-""",
-    "AI_Automation_Specialist.md": """# JOMARIE ELIASON
-**AI & Automation Specialist**
+My foundation was built in the U.S. Army as a Marine Engineering Specialist. I bring a disciplined, methodical approach to troubleshooting and systems maintenance that ensures 100% reliability in high-stakes, mission-critical environments.
 
-### EXPERTISE
-AI-Native Technical Lead specialized in deploying Generative AI frameworks to solve operational challenges. Expert in building custom AI-powered applications without code ("Vibe Coding") to solve operational bottlenecks.
+📫 Connect With Me
 
-### AI COMPETENCIES
-- **Prompt Engineering:** Expert in RIGS framework.
-- **Data Intelligence:** Visualizing unstructured data via Gemini and BigQuery.
-- **Automation:** Deploying AI agents for sales and support workflows.
+LinkedIn: linkedin.com/in/j-nacario
 
-### CERTIFICATIONS
-- Google AI Professional Certificate (2026)
-- MTA: Software Development Fundamentals
-""",
-    "Cloud_Solutions_Architect.md": """# JOMARIE ELIASON
-**Cloud Solutions & Support Architect**
+Portfolio: JomarieNacario.github.io/technical-resumes-2026
 
-### PROFESSIONAL SUMMARY
-**AWS Certified Solutions Architect & U.S. Army Veteran** with a deep focus on cloud migration, infrastructure reliability, and multi-cloud environments (AWS/Azure). Recently credentialed as an **AWS Cloud Support Associate (2025)**, combining advanced troubleshooting skills with a strategic understanding of scalable architecture.
+Email: jomarienacario15@gmail.com
 
-### CLOUD & TECHNICAL COMPETENCIES
-* **Architecture:** VPC configuration, High Availability (Multi-AZ), IAM Security, Route53.
-* **Storage & Compute:** EC2, S3, RDS, Lambda, and CloudWatch monitoring.
-* **Support:** Enterprise hardware/software resolution, virtualization, and Linux administration.
-* **Automation:** Integrating AI-driven monitoring and automated recovery scripts.
+Phone: 0960-563-6035
 
-### EXPERIENCE HIGHLIGHTS
-**AURAKORE IT SOLUTIONS** | Technical Account Executive
-* Prototyped and proposed optimized AWS/Azure architectures.
-**U.S. ARMY** | Marine Engineering Specialist
-* Diagnosed and repaired critical engineering systems under high-stakes conditions.
-
-### CERTIFICATIONS
-* **AWS Cloud Support Associate** | 2025
-* **AWS Certified Solutions Architect – Associate** | 2022
-* **Microsoft Certified: Azure Fundamentals (AZ-900)** | 2021
-""",
-    "Enterprise_IT_Support.md": """# JOMARIE ELIASON
-**Senior IT Support Specialist**
-
-### PROFESSIONAL SUMMARY
-Senior IT Support Specialist and U.S. Army Veteran with 8+ years experience in hardware/software resolution and network security. Expert in enterprise systems administration and integrating AI automation into traditional helpdesk workflows.
-
-### TECHNICAL SKILLS
-- **Systems:** Active Directory, Office 365, Windows/Linux Server.
-- **Troubleshooting:** High-pressure hardware resolution (Apple/Military).
-- **Networking:** Security foundations and virtualization.
-
-### CERTIFICATIONS
-- Google IT Support Professional Certificate (2025)
-- Google AI Professional Certificate (2026)
-"""
+"The Army taught me how to fix it; Apple taught me how to sell the solution; AI allows me to scale it."
